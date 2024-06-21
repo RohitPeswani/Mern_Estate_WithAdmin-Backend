@@ -28,7 +28,7 @@ mongoose
 const app = express();
 
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin: 'https://mern-estate-frontend.netlify.app',
 }))
 app.use(express.json());
 
