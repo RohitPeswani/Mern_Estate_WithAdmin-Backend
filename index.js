@@ -15,7 +15,7 @@ dotenv.config();
 const PORT = process.env.PORT || 8000
 
 mongoose
-  .connect(process.env.MONGO_URL)
+  .connect(process.env.MONGO_URL, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true })
   .then(() => {
     console.log('Connected to MongoDB!');
   })
