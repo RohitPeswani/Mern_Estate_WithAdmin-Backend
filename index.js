@@ -12,7 +12,7 @@ import cors from "cors";
 
 dotenv.config();
 
-const PORT = process.env.PORT || 8000
+const PORT = process.env.PORT || 8080
 
 mongoose
   .connect(process.env.MONGO_URL, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true })
